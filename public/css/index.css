@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: #001525;
+}
+
+#clock h2 {
+    position: relative;
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    font-weight: 700;
+    letter-spacing: 0.8em;
+    font-size: 18px;
+    text-shadow: 2px 2px #7cb4df56;
+}
+
+#clock #time {
+    display: flex;
+}
+
+#clock #time div {
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 4px linear-gradient(transparent, rgba(0, 0, 0.2, 0.6));
+}
+
+#clock #time div span {
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 80px;
+    background: #008cff;
+    color: #ffffff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: monospace;
+    z-index: 10;
+    box-shadow: 0 0 0 1px rgba(102, 101, 101, 0.2);
+}
+
+#clock #time div span:nth-child(2) {
+    height: 30px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    background: #0e5fa1;
+}
+
+#clock #time div:nth-last-child(2) span {
+    background: #cc00ff;
+}
+
+#clock #time div:nth-last-child(2) span:nth-child(2) {
+    background: #b700ff;
+}
+
+#clock #time div:nth-last-child(3) span {
+    background: #205afa;
+}
+
+#clock #time div:nth-last-child(3) span:nth-child(3) {
+    background: #1100ff;
+}
+
+#clock #time div:nth-last-child(1) span {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 40px;
+    font-size: 24px;
+    background: #ffffff;
+    color: #000000;
+    -webkit-box-reflect: below 4px linear-gradient(transparent, rgba(0, 0, 0.2, 0.6));
+}
